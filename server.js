@@ -19,4 +19,9 @@ app.get('/hello', (reg, res, next)=>{
     });
 });
 
+app.get('/hotel?', (req,res,next)=>{
+    res.status(200).json({
+        'msg' : 'TRIVAGO XD'
+    })
+}
 module.exports = app;
